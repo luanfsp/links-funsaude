@@ -62,7 +62,7 @@ body {
 .brand img {
   display: block;
   width: 42px;
-  height: 48px;
+  height: 47.3px;
   flex: 0 0 42px;
   object-fit: contain;
   object-position: center;
@@ -539,7 +539,7 @@ body {
 
   .brand img {
     width: 42px;
-    height: 38px;
+    height: 47.3px;
     flex-basis: 42px;
   }
 
@@ -576,7 +576,7 @@ body {
 
   .hero-logo {
     width: 72px;
-    height: 64px;
+    height: 81px;
     flex-basis: 72px;
     border-radius: 0;
   }
@@ -638,7 +638,7 @@ body {
 
   .hero-logo {
     width: 62px;
-    height: 55px;
+    height: 69.8px;
     flex-basis: 62px;
   }
 
