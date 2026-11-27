@@ -61,10 +61,11 @@ body {
 
 .brand img {
   display: block;
-  width: 48px;
-  height: 43px;
-  flex: 0 0 48px;
+  width: 42px;
+  height: 48px;
+  flex: 0 0 42px;
   object-fit: contain;
+  object-position: center;
   border-radius: 0;
 }
 
@@ -199,10 +200,11 @@ body {
   display: block;
   position: relative;
   z-index: 1;
-  width: 92px;
-  height: 82px;
-  flex: 0 0 92px;
+  width: 96px;
+  height: 108px;
+  flex: 0 0 96px;
   object-fit: contain;
+  object-position: center;
   border-radius: 0;
   filter: drop-shadow(0 10px 18px #0003);
 }
@@ -349,6 +351,14 @@ body {
   stroke-width: 1.7;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+
+.service-icon img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  image-rendering: auto;
 }
 
 .blue { background: #edf2ff; color: #355de0; }
