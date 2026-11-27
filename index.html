@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10145c">
+  <meta name="description" content="Portal de acesso rápido aos sistemas e serviços da FUNSAÚDE.">
+  <title>Portal FUNSAÚDE</title>
+  <link rel="icon" type="image/png" href="assets/logo-funsaude.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Portal FUNSAÚDE - início">
+      <img src="assets/logo-funsaude.png" alt="Logo FUNSAÚDE">
+      <span>Portal <strong>FUNSAÚDE</strong></span>
+    </a>
+    <span class="topbar-label">Central de serviços</span>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <span class="eyebrow">ACESSO RÁPIDO</span>
+        <h1 id="page-title">Tudo o que você precisa,<br><span>em um só lugar.</span></h1>
+        <p>Encontre os sistemas, serviços e canais institucionais da FUNSAÚDE.</p>
+      </div>
+      <div class="hero-mark" aria-hidden="true"><span>F</span><i></i><span>P</span></div>
+    </section>
+
+    <section class="directory" aria-label="Diretório de serviços">
+      <div class="directory-heading">
+        <div>
+          <span class="eyebrow">DIRETÓRIO</span>
+          <h2>Links úteis</h2>
+        </div>
+        <span class="result-count" id="result-count">6 serviços</span>
+      </div>
+
+      <label class="search-box" for="search-input">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 4 4"></path></svg>
+        <input id="search-input" type="search" placeholder="Buscar um serviço..." autocomplete="off">
+        <kbd>/</kbd>
+      </label>
+
+      <nav class="filters" aria-label="Filtrar por categoria" id="filters">
+        <button class="filter active" type="button" data-filter="Todos" aria-pressed="true">Todos <span>6</span></button>
+        <button class="filter" type="button" data-filter="Sistemas" aria-pressed="false">Sistemas <span>3</span></button>
+        <button class="filter" type="button" data-filter="Institucional" aria-pressed="false">Institucional <span>2</span></button>
+        <button class="filter" type="button" data-filter="Publicações oficiais" aria-pressed="false">Publicações oficiais <span>1</span></button>
+      </nav>
+
+      <div class="service-grid" id="service-grid">
+        <a class="service-card" href="https://saogabrieldooeste.flowdocs.com.br:2053/credentials/login" target="_blank" rel="noopener noreferrer" data-category="Sistemas" data-search="flowdocs flow docs documentos processos">
+          <span class="service-icon blue"><svg viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"></path><path d="M14 3v5h5M9 12h6M9 16h6"></path></svg></span>
+          <span class="service-info"><span class="service-category">Sistemas</span><strong>FlowDocs</strong><small>Gestão de documentos e processos</small></span>
+          <span class="external" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="service-card" href="http://172.30.3.33:8087/scpi9/" target="_blank" rel="noopener noreferrer" data-category="Sistemas" data-search="scpi9 scpi sistema">
+          <span class="service-icon violet"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="6" rx="1"></rect><rect x="4" y="14" width="16" height="6" rx="1"></rect><path d="M8 7h.01M8 17h.01M12 7h5M12 17h5"></path></svg></span>
+          <span class="service-info"><span class="service-category">Sistemas</span><strong>SCPI9</strong><small>Sistema de gestão</small></span>
+          <span class="external" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="service-card" href="https://script.google.com/macros/s/AKfycbxAZNhHSn5adEBlb43GMUYPJQX1zE13KblIG0EfOLUm-AMV6GW2g9XXEhBfxAIctmWdJw/exec" target="_blank" rel="noopener noreferrer" data-category="Sistemas" data-search="portal exames exames">
+          <span class="service-icon red"><svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18"></path><circle cx="12" cy="12" r="9"></circle></svg></span>
+          <span class="service-info"><span class="service-category">Sistemas</span><strong>Portal de Exames</strong><small>Acesso ao portal de exames</small></span>
+          <span class="external" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="service-card" href="https://www.saogabriel.ms.gov.br/home" target="_blank" rel="noopener noreferrer" data-category="Institucional" data-search="prefeitura são gabriel do oeste municipal">
+          <span class="service-icon navy"><svg viewBox="0 0 24 24"><path d="m3 10 9-6 9 6M5 10v10M9 10v10M15 10v10M19 10v10M3 20h18"></path></svg></span>
+          <span class="service-info"><span class="service-category">Institucional</span><strong>Prefeitura</strong><small>Prefeitura de São Gabriel do Oeste</small></span>
+          <span class="external" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="service-card" href="https://camarasgo.ms.gov.br/" target="_blank" rel="noopener noreferrer" data-category="Institucional" data-search="câmara camara municipal são gabriel do oeste">
+          <span class="service-icon navy"><svg viewBox="0 0 24 24"><path d="m3 10 9-6 9 6M5 10v10M9 10v10M15 10v10M19 10v10M3 20h18"></path></svg></span>
+          <span class="service-info"><span class="service-category">Institucional</span><strong>Câmara Municipal</strong><small>Câmara de São Gabriel do Oeste</small></span>
+          <span class="external" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="service-card" href="https://www.diariooficialms.com.br/assomasul" target="_blank" rel="noopener noreferrer" data-category="Publicações oficiais" data-search="diário oficial ms assomasul publicações legislação">
+          <span class="service-icon amber"><svg viewBox="0 0 24 24"><path d="M5 3h14v18H5zM8 7h8M8 11h8M8 15h5"></path></svg></span>
+          <span class="service-info"><span class="service-category">Publicações oficiais</span><strong>Diário Oficial de MS</strong><small>Publicações oficiais da ASSOMASUL</small></span>
+          <span class="external" aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <div class="empty-state" id="empty-state" hidden>
+        <span>⌕</span>
+        <strong>Nenhum serviço encontrado</strong>
+        <p>Tente outro termo ou selecione uma categoria diferente.</p>
+      </div>
+    </section>
+
+    <aside class="notice"><span class="notice-icon">i</span><p><strong>Acesso à rede:</strong> alguns serviços podem exigir conexão à rede interna da FUNSAÚDE ou VPN.</p></aside>
+  </main>
+
+  <footer class="footer">
+    <span>FUNSAÚDE · Portal de Links</span>
+    <span>Uso interno e institucional</span>
+  </footer>
+</body>
+</html>
